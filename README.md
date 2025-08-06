@@ -3,9 +3,9 @@
 This repository contains all the code, data, and visualizations related to the spatial models and analyses reported in our paper.
 
 ## Folder Structure
-- `data_and_models/`: Contains all the data used to fit the models (see `Main_code.R` and `Dataset_model_creation.R`).
-- `dati/`: Contains all the raw data used to build the original dataset and some data used for feature engineering (see `Orig_dataset_creation.R` and `Dataset_model_creation.R`).
-- `Images_paper/`: All figures used in the paper.
+- `data_and_models/`: Contains all the data used to fit the models and the model outputs (see `Main_code.R` and `Dataset_model_creation.R`). Output models starting with `Train` are clearly the training models (see Appendix B). There are four other (complete with all the years) models that follow the four different specifications described in Appendix B: we report all of them for completeness. The one of major interest and considered in the paper (see Section 3 - Methods and Appendix A) is `Paper_Model_rhobeta_sexfixed.RData`.
+- `dati.zip`: Contains all the raw data used to build the original dataset and some data used for feature engineering (see `Orig_dataset_creation.R` and `Dataset_model_creation.R`).
+- `Images_paper.zip`: All figures used in the paper.
 
 ## R Scripts Overview
 
