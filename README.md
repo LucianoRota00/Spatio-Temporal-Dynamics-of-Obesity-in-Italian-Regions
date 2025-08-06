@@ -21,11 +21,11 @@ This repository contains all the code, data, and visualizations related to the s
 4. **Mod_eval_and_comp.R**  
    Compares the training models, as reported in Appendix B of the paper.
 
-5. **Dataset_model_creation.R**  
-   Builds the dataset used for model fitting, including preprocessing and feature engineering, starting from dataset built on "Orig_dataset_creation.R".
-
-6. **Model_diagnostics.R**  
+5. **Model_diagnostics.R**  
    Visualizations to assess convergence of the MCMC algorithm.
+
+6. **Dataset_model_creation.R**  
+   Builds the dataset used for model fitting, including preprocessing and feature engineering, starting from dataset built on "Orig_dataset_creation.R".
 
 7. **Orig_dataset_creation.R**  
    Combines raw data sources to build the original dataset (see Section 2 – Data of the paper).
