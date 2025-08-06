@@ -3,7 +3,7 @@
 This repository contains all the code, data, and visualizations related to the spatial models and analyses reported in our paper.
 
 ## Folder Structure
-- `data_and_models/`: Contains all the data used to fit the models and the output of the four training models and their complete counterparts (see `Main_code.R`).
+- `data_and_models/`: Contains all the data used to fit the models (see `Main_code.R` and `Dataset_model_creation.R`).
 - `dati/`: Contains all the raw data used to build the original dataset and some data used for feature engineering (see `Orig_dataset_creation.R` and `Dataset_model_creation.R`).
 - `Images_paper/`: All figures used in the paper.
 
