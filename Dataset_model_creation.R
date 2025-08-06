@@ -1,4 +1,4 @@
-# taken from script "Preliminaries to run for modeling script" -----------
+# Preliminaries --------------------------------------------
 library(readxl)
 library(tidyverse)
 library(GGally)
@@ -105,7 +105,7 @@ years_20xx = seq(2010,2022, 1)
 # Normalizing population --------------------------------------------------
 
 # Population weights (by sex) ------------------------------------------------------
-pop = read_excel("Pop_eurostat.xlsx", 
+pop = read_excel("dati\\Pop_eurostat.xlsx", 
                  sheet = "Sheet 1")
 
 trento_pop = pop %>% filter(Region_name == 'Provincia Autonoma di Trento')
@@ -126,7 +126,7 @@ trento_weight_tot = trento_pop_tot/(trento_pop_tot+bolzano_pop_tot)
 bolzano_weight_tot = bolzano_pop_tot/(trento_pop_tot+bolzano_pop_tot)
 
 # Education ---------------------------------------------------------------
-edu = read_excel("education_5_8.xlsx", 
+edu = read_excel("dati\\education_5_8.xlsx", 
                  sheet = "Sheet 1")
 edu = edu[1:273,]
 
@@ -191,7 +191,7 @@ df_model_all %>% colnames()
 
 
 # Gross Income  -----------------------------
-gi = read_excel("gross_income_eurostat.xlsx", 
+gi = read_excel("dati\\gross_income_eurostat.xlsx", 
                 sheet = "Sheet 1")
 gi = gi[1:273,] 
 gi$Gross_income = as.double(gi$Gross_income)
@@ -248,7 +248,7 @@ vars_final_all
 df_model_all = df_model_all %>% mutate(Overweight = Overweight-Obesity)
 
 # Regional health expenditure -------------------------------------
-reg_health_exp_df = read_excel("Spesa_salute_regioni.xlsx")
+reg_health_exp_df = read_excel("dati\\Spesa_salute_regioni.xlsx")
 reg_health_exp_df = reg_health_exp_df %>% pivot_longer(-Region_name,
                                                        names_to = 'Year',
                                                        values_to = 'health_expenditure')
