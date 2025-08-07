@@ -1,0 +1,24 @@
+# R session and history files
+.Rhistory
+.Rapp.history
+.RData
+
+# RStudio project settings 
+.Rproj.user/
+*.Rproj
+
+# OS-generated files
+.DS_Store      # macOS
+Thumbs.db      # Windows
+
+# Temporary files and backups
+*.tmp
+*.bak
+*.swp
+~$*
+
+# Logs / LaTeX junk
+*.log
+*.aux
+*.out
+*.toc
