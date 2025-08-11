@@ -1,6 +1,10 @@
 # Modeling Spatio-Temporal Dynamics of Obesity in Italian Regions via Bayesian Beta Regression
 
-This repository contains all the code, data and visualizations related to the spatio-temporal Bayesian Beta regression models described in our paper.
+This repository contains the code, datasets, and visualizations accompanying our paper:  
+[Modeling Spatio-Temporal Dynamics of Obesity in Italian Regions via Bayesian Beta Regression](http://arxiv.org/abs/2508.05719).
+
+In this work, we develop a spatio-temporal Bayesian Beta regression model to study obesity prevalence across Italian regions over time.  
+Our approach accounts for both spatial correlations between regions and temporal evolution, enabling robust inference and visualization of regional trends.
 
 ---
 
